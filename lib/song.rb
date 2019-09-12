@@ -24,9 +24,10 @@ class Song
   end
 
   def self.create_by_name name
-    person = self.new
-    person.name = name
+    person = self.new_by_name name
     person.save
     person
   end
+
+  def self.find_by_name
 end

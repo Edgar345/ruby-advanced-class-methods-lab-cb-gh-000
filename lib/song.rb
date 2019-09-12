@@ -52,5 +52,6 @@ class Song
     name = filename_arr[1].gsub(/\.mp3/, '')
     person = self.create_by_name(name)
     person.artist_name = artist_name
+    person
   end
 end

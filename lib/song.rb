@@ -48,5 +48,6 @@ class Song
 
   def self.new_from_filename filename
     filename_arr = filename("-")
+    artist_name = filename_arr[0].chomp
   end
 end

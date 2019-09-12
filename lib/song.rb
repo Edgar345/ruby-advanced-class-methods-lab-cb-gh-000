@@ -50,7 +50,7 @@ class Song
     filename_arr = filename("-")
     artist_name = filename_arr[0].chomp
     name = filename_arr[1].gsub(/\.mp3/, '')
-    person = self.find_or_create_by_name(name)
+    person = self.create_by_name(name)
     person.artist_name = artist_name
   end
 end

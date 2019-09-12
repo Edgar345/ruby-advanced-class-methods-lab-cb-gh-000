@@ -12,12 +12,15 @@ class Song
 
   # class methods
   def self.create
-    person = Song.new
+    person = self.new
     person.save
     person
   end
 
-  def self.new_by_name
-
+  def self.new_by_name name
+    person = self.new
+    person.name = name
+    person.save 
+    person
   end
 end

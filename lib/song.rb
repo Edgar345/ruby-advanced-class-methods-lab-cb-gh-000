@@ -23,4 +23,6 @@ class Song
     person.save
     person
   end
+
+  def self.create_by_name name
 end

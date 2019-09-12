@@ -60,4 +60,8 @@ class Song
     person.save
     person
   end
+
+  def self.destroy_all
+
+  end
 end

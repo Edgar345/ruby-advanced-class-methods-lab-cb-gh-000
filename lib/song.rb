@@ -14,6 +14,6 @@ class Song
   def self.create
     person = Song.new
     person.save
-    preson
+    person
   end
 end

@@ -47,7 +47,7 @@ class Song
   end
 
   def self.new_from_filename filename
-    filename_arr = filename("-")
+    filename_arr = filename.split("-")
     artist_name = filename_arr[0].chomp
     name = filename_arr[1].gsub(/\.mp3/, '')
     person = self.create_by_name(name)

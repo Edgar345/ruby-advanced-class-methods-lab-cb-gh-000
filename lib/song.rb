@@ -46,7 +46,7 @@ class Song
     self.all.sort_by {|song| song.name} #sort_by returns a new array
   end
 
-  def self.new_from_filename
+  def self.new_from_filename filename
 
   end
 end

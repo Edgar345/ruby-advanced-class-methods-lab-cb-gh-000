@@ -47,6 +47,6 @@ class Song
   end
 
   def self.new_from_filename filename
-
+    filename_arr = filename("-")
   end
 end

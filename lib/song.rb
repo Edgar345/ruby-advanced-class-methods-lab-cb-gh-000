@@ -12,6 +12,7 @@ class Song
 
   # class methods
   def self.create
-
+    person = Song.new
+    person.save
   end
 end
